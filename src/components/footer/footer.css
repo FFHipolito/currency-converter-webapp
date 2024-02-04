@@ -1,0 +1,17 @@
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.footer img {
+  width: 30px;
+  margin: 5px;
+  border-radius: 100%;
+}
