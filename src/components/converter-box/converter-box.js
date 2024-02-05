@@ -3,7 +3,7 @@ import "./converter-box.css";
 function ConverterBox() {
   return (
     <div className="converter-box">
-      <h2>Faça a sua conversão</h2>
+      <h2>Faça a sua conversão!</h2>
       <div className="form">
         <input
           type="number"

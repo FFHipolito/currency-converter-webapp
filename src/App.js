@@ -1,3 +1,4 @@
+import "./App.css";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import ConverterBox from "./components/converter-box/converter-box";
@@ -5,8 +6,10 @@ import ConverterBox from "./components/converter-box/converter-box";
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <ConverterBox></ConverterBox>
+      <div className="main">
+        <Header></Header>
+        <ConverterBox></ConverterBox>
+      </div>
       <Footer></Footer>
     </div>
   );
