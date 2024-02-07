@@ -20,13 +20,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
 }
 
-.converter-box .form > * {
-  margin-top: 30px;
-  width: 200px;
-  height: 50px;
+.converter-box .form .reset-form {
+  background: none;
+  border: none;
+  align-self: flex-end;
+  font-size: 0.8em;
+  text-align: right;
+  color: blue;
+  text-decoration: underline blue;
+  cursor: pointer;
+  margin: 0 2px 5px 0;
+}
+
+.converter-box .form .reset-form:hover {
+  color: #1414b8;
+}
+
+.converter-box .form .amount,
+.base,
+.target {
+  margin-bottom: 30px;
+}
+
+.converter-box .form input,
+select,
+.conversion-button {
   border: 2px solid #000;
   border-radius: 5px;
   font-size: 1.2em;
@@ -34,23 +54,47 @@
 
 .converter-box .form input {
   padding: 0 0 0 9px;
-  width: 187px;
+  width: 247px;
   height: 46px;
 }
 
-.converter-box .form select {
+.converter-box .form select,
+.conversion-button {
   padding: 0 0 0 5px;
+  width: 260px;
+  height: 50px;
+}
+
+.converter-box .form select {
   background-color: #eee;
 }
 
-.converter-box .form button {
+.converter-box .form .conversion-button {
   background-color: #000;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
 }
 
-.converter-box .form button:hover {
+.converter-box .form .conversion-button:hover {
   background-color: #ffde59;
   color: #000;
+}
+
+.converter-box .conversion {
+  margin-top: 50px;
+  font-size: 1em;
+  color: #000;
+}
+
+.converter-box .conversion span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.converter-box .error-message {
+  margin: 2px 0;
+  font-size: 0.8em;
+  text-align: left;
+  color: #dc143c;
 }
